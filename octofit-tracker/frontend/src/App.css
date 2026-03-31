@@ -1,0 +1,205 @@
+/* ── Global ──────────────────────────────────────────── */
+body {
+  background: linear-gradient(160deg, #0d1b2a 0%, #1b2a4a 50%, #0f3460 100%);
+  min-height: 100vh;
+  color: #e2e8f0;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+a {
+  color: #63b3ed;
+  text-decoration: none;
+}
+a:hover {
+  color: #e94560;
+  text-decoration: underline;
+}
+
+/* ── Navbar ───────────────────────────────────────────── */
+.octofit-navbar {
+  background: linear-gradient(90deg, #0a0f1e 0%, #0f3460 100%) !important;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.5);
+  border-bottom: 2px solid #e94560;
+  padding: 0.5rem 1rem;
+}
+
+.octofit-navbar .navbar-brand {
+  color: #fff !important;
+  font-weight: 800;
+  font-size: 1.35rem;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.octofit-navbar .navbar-brand:hover {
+  color: #e94560 !important;
+}
+
+.octofit-navbar-logo {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e94560;
+  box-shadow: 0 0 8px #e9456066;
+}
+
+.octofit-navbar .nav-link {
+  color: #c9d1d9 !important;
+  font-weight: 500;
+  padding: 0.5rem 0.85rem !important;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+}
+
+.octofit-navbar .nav-link:hover {
+  color: #fff !important;
+  background: rgba(233,69,96,0.18);
+}
+
+.octofit-navbar .nav-link.active {
+  color: #e94560 !important;
+  background: rgba(233,69,96,0.12);
+  font-weight: 700;
+}
+
+.octofit-navbar .navbar-toggler {
+  border-color: #e94560;
+}
+.octofit-navbar .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* ── Cards ────────────────────────────────────────────── */
+.octofit-card {
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.35);
+  background: #162032;
+  color: #e2e8f0;
+}
+
+.octofit-card .card-header {
+  background: linear-gradient(90deg, #e94560 0%, #c23152 100%);
+  color: #fff;
+  border-radius: 14px 14px 0 0 !important;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 0.85rem 1.25rem;
+  border: none;
+}
+
+.octofit-card .card-footer {
+  background: #0f1e30;
+  border-top: 1px solid #1e3a5f;
+  color: #7a8fa6;
+  border-radius: 0 0 14px 14px !important;
+  font-size: 0.8rem;
+}
+
+.octofit-card .card-footer code {
+  color: #63b3ed;
+  background: transparent;
+}
+
+/* ── Tables ───────────────────────────────────────────── */
+.table {
+  color: #dde6f0;
+  margin-bottom: 0;
+}
+
+.table thead th {
+  background: linear-gradient(90deg, #0f3460 0%, #1a3a6e 100%);
+  color: #e94560;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  padding: 0.85rem 1rem;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: #1a2d46;
+  color: #dde6f0;
+}
+
+.table-striped > tbody > tr:nth-of-type(even) > * {
+  background-color: #162032;
+  color: #dde6f0;
+}
+
+.table-hover tbody tr:hover > * {
+  background-color: #1e3d5f !important;
+  color: #fff !important;
+}
+
+.table td, .table th {
+  border-color: #1e3a5f;
+  vertical-align: middle;
+  padding: 0.7rem 1rem;
+}
+
+/* ── Badges ───────────────────────────────────────────── */
+.octofit-badge {
+  font-size: 0.85em;
+  padding: 0.35em 0.65em;
+}
+
+/* ── Buttons ──────────────────────────────────────────── */
+.btn-light {
+  color: #0f3460;
+  font-weight: 700;
+}
+
+.btn-outline-light:hover {
+  background: #e94560;
+  border-color: #e94560;
+  color: #fff;
+}
+
+/* ── Hero ─────────────────────────────────────────────── */
+.octofit-hero {
+  background: linear-gradient(135deg, #0a0f1e 0%, #0f3460 55%, #e94560 100%);
+  color: #fff;
+  border-radius: 16px;
+  padding: 4rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  border: 1px solid #e9456033;
+}
+
+.octofit-hero h1 {
+  font-weight: 800;
+  font-size: 2.75rem;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+}
+
+.octofit-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* ── Spinner ───────────────────────────────────────────── */
+.spinner-border { border-width: 0.2em; }
+
+/* ── Alert ─────────────────────────────────────────────── */
+.alert-danger {
+  background: #2d1a22;
+  border-color: #e94560;
+  color: #f9a8c0;
+}
+
+/* ── Spin animation ────────────────────────────────────── */
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.spin-icon {
+  display: inline-block;
+  animation: App-logo-spin infinite 8s linear;
+}
